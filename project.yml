@@ -11,21 +11,21 @@ targets:
       - DIETCapture
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.rescan.app
+        PRODUCT_BUNDLE_IDENTIFIER: com.rescan.app-demo
         INFOPLIST_FILE: DIETCapture/App/Info.plist
         MARKETING_VERSION: 1.2.0
         CURRENT_PROJECT_VERSION: 1
         TARGETED_DEVICE_FAMILY: "1,2"
-        SUPPORTED_PLATFORMS: iphonesimulator iphoneos
+        SUPPORTED_PLATFORMS: iphoneos
         ENABLE_PREVIEWS: YES
-        DEVELOPMENT_TEAM: ""
-        CODE_SIGN_STYLE: Manual
-        CODE_SIGN_IDENTITY: ""
+        DEVELOPMENT_TEAM: YANC32HQG4
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGN_IDENTITY: Apple Development
         PRODUCT_NAME: ReScan
     dependencies:
       - target: ReScanWidget
         embed: true
-        codeSign: false
+        codeSign: true
 
   ReScanWidget:
     type: app-extension
@@ -34,15 +34,15 @@ targets:
       - ReScanWidget
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.rescan.app.widget
+        PRODUCT_BUNDLE_IDENTIFIER: com.rescan.app-demo.widget
         INFOPLIST_FILE: ReScanWidget/Info.plist
         MARKETING_VERSION: 1.2.0
         CURRENT_PROJECT_VERSION: 1
         TARGETED_DEVICE_FAMILY: "1,2"
-        SUPPORTED_PLATFORMS: iphonesimulator iphoneos
-        DEVELOPMENT_TEAM: ""
-        CODE_SIGN_STYLE: Manual
-        CODE_SIGN_IDENTITY: ""
+        SUPPORTED_PLATFORMS: iphoneos
+        DEVELOPMENT_TEAM: YANC32HQG4
+        CODE_SIGN_STYLE: Automatic
+        CODE_SIGN_IDENTITY: Apple Development
         PRODUCT_NAME: ReScanWidget
         SWIFT_SWIFT3_OBJC_INFERENCE: Default
     dependencies:
